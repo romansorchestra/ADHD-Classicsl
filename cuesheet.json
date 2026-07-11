@@ -1,0 +1,298 @@
+{
+  "title": "Classical Music for Sufferers of ADHD — draft medley",
+  "notes": "All timestamps are seconds into the SOURCE FILE named in 'file'. Items marked verified:false are estimates for mid-piece entries — run --audit and nudge. Items that start at 0 assume a per-movement source file (see README).",
+  "output_basename": "medley_draft",
+  "loudness_target_lufs": -16.0,
+  "true_peak_db": -1.5,
+  "items": [
+    {
+      "id": "01_zarathustra",
+      "act": "ACT 1 — COLD OPEN",
+      "piece": "R. Strauss - Also sprach Zarathustra, Einleitung (bars 1-21)",
+      "file": "sources/01_zarathustra.*",
+      "segments": [{ "start": 0, "duration": 35 }],
+      "transition_in": { "type": "start" },
+      "verified": true,
+      "note": "Opening of the piece. Cut on the held C major organ chord."
+    },
+    {
+      "id": "02_beethoven5",
+      "act": "ACT 1 — COLD OPEN",
+      "piece": "Beethoven - Symphony 5/i (bars 1-24)",
+      "file": "sources/02_beethoven5.*",
+      "segments": [{ "start": 0, "duration": 20 }],
+      "transition_in": { "type": "silence", "gap": 0.8 },
+      "verified": true,
+      "note": "One beat of black after Zarathustra, then the motto."
+    },
+    {
+      "id": "03_figaro",
+      "act": "ACT 1 — COLD OPEN",
+      "piece": "Mozart - Le nozze di Figaro Overture (bars 1-24)",
+      "file": "sources/03_figaro.*",
+      "segments": [{ "start": 0, "duration": 20 }],
+      "transition_in": { "type": "cut" },
+      "verified": true,
+      "note": "Snap cut. Sotto voce scurry, tutti detonates ~b.12."
+    },
+    {
+      "id": "04_mozart40",
+      "act": "ACT 1 — COLD OPEN",
+      "piece": "Mozart - Symphony 40/i (bars 1-20)",
+      "file": "sources/04_mozart40.*",
+      "segments": [{ "start": 0, "duration": 20 }],
+      "transition_in": { "type": "cut" },
+      "verified": true,
+      "note": "Major-to-minor Mozart double."
+    },
+    {
+      "id": "05_spring",
+      "act": "ACT 1 — COLD OPEN",
+      "piece": "Vivaldi - Spring/i opening tutti (bars 1-7)",
+      "file": "sources/05_spring.*",
+      "segments": [{ "start": 0, "duration": 10 }],
+      "transition_in": { "type": "cut" },
+      "verified": true,
+      "note": "Sun-break only."
+    },
+    {
+      "id": "06_summer_presto",
+      "act": "ACT 1 — COLD OPEN",
+      "piece": "Vivaldi - Summer/iii Presto, opening storm",
+      "file": "sources/06_summer_presto.*",
+      "segments": [{ "start": 0, "duration": 20 }],
+      "transition_in": { "type": "cut" },
+      "verified": true,
+      "note": "Hard cut: the weather turns. Cut before the solo episode."
+    },
+    {
+      "id": "07_cancan",
+      "act": "ACT 2 — DANCE FLOOR",
+      "piece": "Offenbach - Galop infernal (Can-Can), two 16-bar strains",
+      "file": "sources/07_cancan.*",
+      "segments": [{ "start": 0, "duration": 25 }],
+      "transition_in": { "type": "silence", "gap": 0.7 },
+      "verified": false,
+      "note": "Assumes a standalone Galop file. If using the full Orpheus overture, find the galop (~7-8 min in) and set start."
+    },
+    {
+      "id": "08_hungarian5",
+      "act": "ACT 2 — DANCE FLOOR",
+      "piece": "Brahms - Hungarian Dance No. 5 (bars 1-32, Parlow orch.)",
+      "file": "sources/08_hungarian5.*",
+      "segments": [{ "start": 0, "duration": 25 }],
+      "transition_in": { "type": "cut" },
+      "verified": true,
+      "note": "Keep the rit./a tempo gags."
+    },
+    {
+      "id": "09_toreador",
+      "act": "ACT 2 — DANCE FLOOR",
+      "piece": "Bizet - Carmen Suite 1, Les Toreadors: F major refrain strain",
+      "file": "sources/09_toreador.*",
+      "segments": [{ "start": 45, "duration": 25 }],
+      "transition_in": { "type": "cut" },
+      "verified": false,
+      "note": "Movement opens with the corrida allegro; the refrain lands mid-movement. ESTIMATE 0:45 — audit."
+    },
+    {
+      "id": "10_habanera",
+      "act": "ACT 2 — DANCE FLOOR",
+      "piece": "Bizet - Carmen Suite 2, Habanera: vamp + D minor verse (bars 1-22)",
+      "file": "sources/10_habanera.*",
+      "segments": [{ "start": 0, "duration": 25 }],
+      "transition_in": { "type": "crossfade", "duration": 1.0 },
+      "verified": true,
+      "note": "Movement file, starts on the vamp."
+    },
+    {
+      "id": "11_danube",
+      "act": "ACT 2 — DANCE FLOOR",
+      "piece": "J. Strauss II - Blue Danube: intro horn accel + Waltz 1A/1B",
+      "file": "sources/11_danube.*",
+      "segments": [{ "start": 65, "duration": 60 }],
+      "transition_in": { "type": "crossfade", "duration": 1.5 },
+      "verified": false,
+      "note": "ESTIMATE: last bars of intro ~1:05 in most recordings, waltz 1A ~1:20. D minor Habanera resolves into D major waltz. Audit."
+    },
+    {
+      "id": "12_morning_mood",
+      "act": "ACT 3 — BREATHER",
+      "piece": "Grieg - Peer Gynt: Morning Mood (bars 1-10)",
+      "file": "sources/12_morning_mood.*",
+      "segments": [{ "start": 0, "duration": 20 }],
+      "transition_in": { "type": "silence", "gap": 1.2 },
+      "verified": true,
+      "target_offset_db": -2.5,
+      "note": "One bar of stillness after the waltz, then solo flute a whole step up."
+    },
+    {
+      "id": "13_clair_de_lune",
+      "act": "ACT 3 — BREATHER",
+      "piece": "Debussy - Clair de lune (piano bars 1-15; own orchestration for the show)",
+      "file": "sources/13_clair_de_lune.*",
+      "segments": [{ "start": 0, "duration": 50 }],
+      "transition_in": { "type": "crossfade", "duration": 2.0 },
+      "verified": true,
+      "target_offset_db": -3.0,
+      "note": "Piano recording is fine for the draft; Caplet 1922 orchestration is the PD scoring crib."
+    },
+    {
+      "id": "14_jupiter",
+      "act": "ACT 3 — BREATHER",
+      "piece": "Holst - Jupiter: Andante maestoso (Thaxted), strain + tutti repeat",
+      "file": "sources/14_jupiter.*",
+      "segments": [{ "start": 175, "duration": 45 }],
+      "transition_in": { "type": "crossfade", "duration": 2.0 },
+      "verified": false,
+      "target_offset_db": -1.0,
+      "note": "ESTIMATE: Thaxted arrives ~2:55 in most recordings. The emotional summit. Audit."
+    },
+    {
+      "id": "15_swan_lake",
+      "act": "ACT 3 — BREATHER",
+      "piece": "Tchaikovsky - Swan Lake, Scene (bars 1-18): harp/tremolo + oboe theme",
+      "file": "sources/15_swan_lake.*",
+      "segments": [{ "start": 0, "duration": 30 }],
+      "transition_in": { "type": "crossfade", "duration": 1.5 },
+      "verified": true,
+      "target_offset_db": -2.0,
+      "note": "Lights down. Ends the breather in B minor."
+    },
+    {
+      "id": "16_mountain_king",
+      "act": "ACT 4 — VILLAIN ERA",
+      "piece": "Grieg - In the Hall of the Mountain King: pizz creep + final prestissimo",
+      "file": "sources/16_mountain_king.*",
+      "segments": [
+        { "start": 0, "duration": 12 },
+        { "from_end": 14, "duration": 13 }
+      ],
+      "transition_in": { "type": "silence", "gap": 0.6 },
+      "verified": true,
+      "note": "Two splices from one file: bars 1-8 creep, jump-cut to the closing accelerando and stingers."
+    },
+    {
+      "id": "17_bald_mountain",
+      "act": "ACT 4 — VILLAIN ERA",
+      "piece": "Mussorgsky/Rimsky-Korsakov - Night on Bald Mountain, opening vortex + witches' theme",
+      "file": "sources/17_bald_mountain.*",
+      "segments": [{ "start": 0, "duration": 30 }],
+      "transition_in": { "type": "cut" },
+      "verified": true,
+      "note": "Rimsky-Korsakov version ONLY (Stokowski/Fantasia arrangement is protected)."
+    },
+    {
+      "id": "18_dies_irae",
+      "act": "ACT 4 — VILLAIN ERA",
+      "piece": "Verdi - Requiem, Dies irae (bars 1-20): hammer chords + torrents",
+      "file": "sources/18_dies_irae.*",
+      "segments": [{ "start": 0, "duration": 20 }],
+      "transition_in": { "type": "cut" },
+      "verified": true,
+      "note": "Choral shout folded into trumpets/trombones in the arrangement; any recording works for the draft."
+    },
+    {
+      "id": "19_valkyries",
+      "act": "ACT 4 — VILLAIN ERA",
+      "piece": "Wagner - Ride of the Valkyries (concert version, opening ~35 bars)",
+      "file": "sources/19_valkyries.*",
+      "segments": [{ "start": 0, "duration": 30 }],
+      "transition_in": { "type": "crossfade", "duration": 0.8 },
+      "verified": true,
+      "note": "Ostinato from bar 1 through the first full brass statement."
+    },
+    {
+      "id": "20_bumblebee",
+      "act": "ACT 5 — SPRINT FINALE",
+      "piece": "Rimsky-Korsakov - Flight of the Bumblebee (bars 1-24)",
+      "file": "sources/20_bumblebee.*",
+      "segments": [{ "start": 0, "duration": 15 }],
+      "transition_in": { "type": "silence", "gap": 0.6 },
+      "verified": true,
+      "note": "The thesis statement."
+    },
+    {
+      "id": "21_trepak",
+      "act": "ACT 5 — SPRINT FINALE",
+      "piece": "Tchaikovsky - Nutcracker, Trepak (bars 1-32)",
+      "file": "sources/21_trepak.*",
+      "segments": [{ "start": 0, "duration": 20 }],
+      "transition_in": { "type": "cut" },
+      "verified": true,
+      "note": "Main strain + repeat, molto vivace."
+    },
+    {
+      "id": "22_william_tell",
+      "act": "ACT 5 — SPRINT FINALE",
+      "piece": "Rossini - William Tell Overture, finale: fanfare pickup + galop x2",
+      "file": "sources/22_william_tell.*",
+      "segments": [{ "start": 0, "duration": 35 }],
+      "transition_in": { "type": "cut" },
+      "verified": false,
+      "note": "Assumes a standalone Finale file (start 0). If using the full overture, the finale starts ~8:25 — set start and audit."
+    },
+    {
+      "id": "23_haydn_surprise",
+      "act": "ACT 5 — SPRINT FINALE",
+      "piece": "Haydn - Symphony 94/ii (bars 9-16 + the chord)",
+      "file": "sources/23_haydn_surprise.*",
+      "segments": [{ "start": 15, "duration": 17 }],
+      "transition_in": { "type": "silence", "gap": 0.5 },
+      "verified": false,
+      "norm": "peak",
+      "note": "Dead cut to pianissimo strings; the surprise chord IS the launch button. ESTIMATE: pp repeat ~0:15, chord ~0:31 — audit carefully, this gag is timing-critical."
+    },
+    {
+      "id": "24_pomp",
+      "act": "ACT 5 — SPRINT FINALE",
+      "piece": "Elgar - Pomp & Circumstance No. 1: trio tune, D major grandioso statement",
+      "file": "sources/24_pomp.*",
+      "segments": [{ "start": 285, "duration": 30 }],
+      "transition_in": { "type": "cut" },
+      "verified": false,
+      "note": "ESTIMATE: the big final trio statement ~4:45 in most recordings. Audit.",
+      "bed": {
+        "piece": "Ravel - Bolero: 2-bar snare ostinato, looped as riser",
+        "file": "sources/25_bolero_snare.*",
+        "segment": { "start": 0, "duration": 10 },
+        "solo": 4.0,
+        "under": 8.0,
+        "fade_out": 3.0,
+        "gain_db": -6.0,
+        "note": "Snare sneaks in out of the Haydn chord decay, 4s alone crescendo, rides under Pomp, fades."
+      }
+    },
+    {
+      "id": "26_ode_to_joy",
+      "act": "ACT 5 — SPRINT FINALE",
+      "piece": "Beethoven - Symphony 9/iv: full-orchestra Ode statement (from b.164)",
+      "file": "sources/26_ode_to_joy.*",
+      "segments": [{ "start": 285, "duration": 25 }],
+      "transition_in": { "type": "crossfade", "duration": 1.5 },
+      "verified": false,
+      "note": "ESTIMATE: tutti D major statement ~4:45 into the finale in most recordings; varies a lot. Audit."
+    },
+    {
+      "id": "27_1812",
+      "act": "ACT 5 — SPRINT FINALE",
+      "piece": "Tchaikovsky - 1812 Overture, coda: bells hymn through final fanfares (last ~40 bars)",
+      "file": "sources/27_1812.*",
+      "segments": [{ "from_end": 46, "duration": 45 }],
+      "transition_in": { "type": "crossfade", "duration": 1.0 },
+      "verified": true,
+      "norm": "peak",
+      "note": "Taken from the END of the file, so this works with any recording length. Native E-flat = the built-in semitone lift out of D."
+    },
+    {
+      "id": "28_button",
+      "act": "ACT 5 — SPRINT FINALE",
+      "piece": "Beethoven - Symphony 5/i, bars 1-5: the button",
+      "file": "sources/02_beethoven5.*",
+      "segments": [{ "start": 0, "duration": 6 }],
+      "transition_in": { "type": "silence", "gap": 0.35 },
+      "verified": true,
+      "note": "da-da-da-DUM. Cut to black."
+    }
+  ]
+}
